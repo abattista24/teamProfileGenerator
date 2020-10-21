@@ -18,7 +18,7 @@ const employee = [
     name:"email",
   },
   {
-    //ask employee type (engineer/intern)
+    //ask employee type (engineer/intern), use to decide which file to go to to change class...maybe?
     type:"list",
     message:"What is the type of employee?",
     name:"eType",
@@ -31,4 +31,6 @@ const employee = [
 //get employee information
 inquirer.prompt(employee)
 // console.log (employee.data)
+//display employee as role
+  getRole(employee)
  //Add to main html page
