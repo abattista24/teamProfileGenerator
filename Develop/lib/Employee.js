@@ -10,24 +10,24 @@ class Employee {
   this.email =email;
   //ask employee type (engineer/intern/manager), use to decide which file to go to to change class...maybe?
   // this. role = role;
-};
+  };
 
 //get employee information
-getName(){
-  return this.name
+  getName(){
+    return this.name
+  };
+  getId(){
+    return this.id
+  };
+  getEmail(){
+    return this.email
+  };
+  //display employee as role
+  getRole(){
+  return "Employee"
+  };
 };
-getId(){
-  return this.id
-};
-getEmail(){
-  return this.email
-};
-//display employee as role
-getRole(){
-return "employee"};
-}
  //Add to main html page
 
- const worker = new Employee("anna", "anna@email.com","29",getRole);
- console.log (worker)
+ module.exports = Employee
 
